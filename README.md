@@ -1,3 +1,6 @@
+
+https://place-hold.it/150x150/gray/black.jpg&text=PlaceHolder
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
