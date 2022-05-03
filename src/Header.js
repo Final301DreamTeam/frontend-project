@@ -1,23 +1,29 @@
 import React from 'react';
-import {Navbar, NavItem} from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Nav, Navbar, Container } from 'react-bootstrap';
+import './Header.css';
+// import { Link } from 'react-router-dom';
 
 
-class Header extends React.Component{
-    constructor(props){
+class Header extends React.Component {
+    constructor(props) {
         super(props);
-        this.state={
+        this.state = {
 
         }
     }
-    render(){
-        return(
+    render() {
+        return (
             <>
-            <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
-                <Navbar.Brand>Items</Navbar.Brand>
-                <NavItem>Home
-                </NavItem>
-            </Navbar>
+                <Navbar className="navBar" bg="dark" variant="dark">
+                    <Container className="container">
+                        <Navbar.Brand className="brandNav" href="#home">PetMate</Navbar.Brand>
+                        <Nav class="navLinks">
+                            <Nav.Link className="homeNav" href="#home">Home</Nav.Link>
+                            <Nav.Link className="aboutNav" href="#about">About</Nav.Link>
+                            <Nav.Link className="membershipNav" href="#pricing">Membership</Nav.Link>
+                        </Nav>
+                    </Container>
+                </Navbar>
             </>
         );
     }
