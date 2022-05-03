@@ -1,0 +1,52 @@
+body {
+  margin: 0px;
+  
+}
+.navBar {
+
+}
+
+.container {
+  background: rgb(255, 126, 126);
+  color: white;
+  font-family: Helvetica;
+  font-weight: 300;
+  margin-right: auto;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 12px 16px;
+  cursor: pointer;
+  vertical-align: middle;
+  
+}
+
+.brandNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.navLinks {
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-between;
+  width: 30%;
+  padding: 20px;
+  
+}
+
+.homeNav {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.aboutNav {
+  text-decoration: none;
+  color:  rgb(0, 0, 0);
+}
+
+.membershipNav {
+  text-decoration: none;
+  color:  rgb(0, 0, 0);
+}
