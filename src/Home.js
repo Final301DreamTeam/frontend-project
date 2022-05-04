@@ -12,8 +12,6 @@ class Home extends React.Component {
     e.preventDefault();
     const city = e.target.City.value;
     const food = e.target.Food.value;
-    console.log(city);
-    console.log(food);
     this.props.getRestaurants(city, food);
   };
   render() {

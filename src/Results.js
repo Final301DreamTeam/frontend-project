@@ -9,11 +9,7 @@ class Results extends React.Component {
   }
 
   handleAddButton = (restaurant) => {
-    console.log(
-      "updated state after add button pressed: ",
-      this.props.savedResturants
-    );
-    console.log("restaurant passed in to button: ", restaurant);
+    
     this.props.postRestaurants(restaurant);
   };
 
@@ -48,6 +44,8 @@ class Results extends React.Component {
                 >
                   Add
                 </Button>
+
+
               </Carousel.Caption>
             </Carousel.Item>
           ))
