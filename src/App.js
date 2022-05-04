@@ -3,6 +3,7 @@ import Home from './Home';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Results from './Results';
+import Saved from './Saved';
 
 
 
@@ -32,7 +33,7 @@ class App extends React.Component {
       this.setState({
         savedResturants: [...this.state.savedResturants, dataTosave.data]
       })
-      console.log(`${newRestaurant.name} added to yelpDataForProfile`);
+      console.log(`${newRestaurant} added to yelpDataForProfile`);
     } catch (error) {
       console.log('we have an error: ', error.response.data)
     }
@@ -49,6 +50,9 @@ class App extends React.Component {
         restaurantsData={this.state.restaurantsData}
         savedResturants={this.state.savedResturants}
         postRestaurants={this.postRestaurants}
+        />
+        <Saved
+        savedResturants={this.state.savedResturants}
         />
       </>
     )
