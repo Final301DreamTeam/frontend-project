@@ -34,7 +34,7 @@ class Results extends React.Component {
         <Carousel.Item key={idx}>
           <img
             className="d-block w-100"
-            src={data.imageUrl}
+            src={data.image_url}
             alt={data.name}
           />
           <Carousel.Caption>

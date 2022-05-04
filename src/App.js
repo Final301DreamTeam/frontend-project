@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Results from './Results';
 
 
+
 class App extends React.Component {
   constructor (props) {
     super(props)
@@ -37,7 +38,7 @@ class App extends React.Component {
     }
   }
   render() {
-    console.log(this.state.restaurantsData);
+    console.log(this.state.savedResturants);
     return (
       <>
         <Home
@@ -53,5 +54,4 @@ class App extends React.Component {
     )
   }
 }
-
 export default App;
