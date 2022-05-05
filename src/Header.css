@@ -1,43 +1,53 @@
 body {
-  background: rgb(165, 163, 163);
+  background: rgb(186, 241, 255);
+  padding: 10px 10px;
   margin: 0px;
+  
   
 }
 .navBar {
-
+  border: 3px solid lightblue;
+  padding-top: 0;
+  margin: auto;
+  border-radius: 30px;
 }
 
 .container {
-  background: rgb(64, 147, 255);
-  color: white;
+  display: flex;
+  justify-content: center;
+  /* border: 3px solid yellow; */
+  background: lightblue;
+  color: rgb(255, 255, 255);
   font-family: Helvetica;
   font-weight: 300;
-  margin-right: auto;
+  margin: none;
   font-size: 150%;
   font-weight: bold;
-  padding: 12px 16px;
+  padding: 1px 75px;
   cursor: pointer;
-  vertical-align: middle;
+  border-radius: 30px;
+
   
 }
 
 .brandNav {
+  font-family: 'Oleo Script Swash Caps', cursive;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: rgb(138, 76, 76);
+  font-size: 2em;
 }
 .navLinks {
+  /* border: 3px solid blue; */
   display: flex;
   justify-content: flex-end;
-  justify-content: space-between;
-  width: 30%;
-  padding: 20px;
   
 }
 
 .homeNav {
+  
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
