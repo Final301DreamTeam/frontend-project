@@ -23,7 +23,6 @@ class Saved extends React.Component {
   
 
   render() {
-    console.log(this.props.showModal)
     return (
       <>
         {this.props.savedResturants.map((restaurant, idx) => (
