@@ -7,6 +7,7 @@ import Saved from "./Saved";
 import { Modal } from "react-bootstrap";
 import Update from "./UpdateModal";
 import { withAuth0 } from "@auth0/auth0-react";
+import Profile from "./Profile";
 
 class Content extends React.Component {
   constructor(props) {
@@ -16,7 +17,7 @@ class Content extends React.Component {
       savedResturants: [],
       updateRes : null,
       showModal: false,
-      showUpdateModal: false
+      
     };
   }
 
@@ -112,9 +113,11 @@ class Content extends React.Component {
           showModal={this.showModal}
         />
 
+        <Profile/>
+
         <Modal
           show={this.state.showModal}
-          onHide={() => this.setState({ showUpdateModal: false })}
+          onHide={() => this.setState({ showModal: false })}
         >
           <Modal.Header closeButton>
             <Modal.Title>Update Restaurant</Modal.Title>
@@ -130,6 +133,8 @@ class Content extends React.Component {
           </Modal.Body>
         </Modal>
       </>
+
+      
     );
   }
 }

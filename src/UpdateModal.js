@@ -31,6 +31,7 @@ class Update extends React.Component {
   render() {
 
     return (
+      
       <Form >
         <h1>{this.props.updateRes.name}</h1>
     
