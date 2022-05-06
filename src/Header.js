@@ -8,9 +8,11 @@ class Header extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-
+        savedRestaurants: [],
         }
     }
+
+    
     render() {
         return (
             <>
@@ -19,9 +21,9 @@ class Header extends React.Component {
                         <Navbar.Brand className="brandNav" href="#home">FindMyMeal</Navbar.Brand>
                         <Nav className="navLinks">
                             <Nav.Link className="homeNav" href="/">Home</Nav.Link>
-                            <Nav.Link className="savedNav" href="#home">Saved</Nav.Link>
+                            <Nav.Link className="savedNav" href="/Saved">Saved</Nav.Link>
                             <Nav.Link className="aboutNav" href="/About">About</Nav.Link>
-                            <Nav.Link className="membershipNav" href="#pricing">Membership</Nav.Link>
+                            <Nav.Link className="membershipNav" href="/Profile">Profile</Nav.Link>
                         </Nav>
                     </Container>
                 </Navbar>

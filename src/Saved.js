@@ -1,5 +1,5 @@
 import React from "react";
-import axios from "axios";
+// import axios from "axios";
 import { Card, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Saved.css";
@@ -25,7 +25,7 @@ class Saved extends React.Component {
   render() {
     return (
       <>
-        {this.props.savedResturants.map((restaurant, idx) => (
+        {this.props.savedRestaurants.map((restaurant, idx) => (
           <Card className="cards" key={restaurant._id}>
             <Card.Body>
               <Card.Img
