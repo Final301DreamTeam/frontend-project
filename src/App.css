@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+.App body {
+  background-image: url("http://www.tvparty.com/vgifs13/goddtimes2.jpg");
+}
 
 .App-logo {
   height: 40vmin;
@@ -12,6 +15,11 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+Form {
+  font-size: large;
+  font-style:italic;
+}
+
 
 .App-header {
   background-color: #282c34;

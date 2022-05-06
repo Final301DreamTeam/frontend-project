@@ -1,0 +1,67 @@
+body {
+  background: rgb(186, 241, 255);
+  padding: 10px 10px;
+  margin: 0px;
+  
+  
+}
+.navBar {
+  border: 3px solid lightblue;
+  padding-top: 0;
+  margin: auto;
+  border-radius: 30px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  /* border: 3px solid yellow; */
+  background: lightblue;
+  color: rgb(255, 255, 255);
+  font-family: Helvetica;
+  font-weight: 300;
+  margin: none;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 1px 75px;
+  cursor: pointer;
+  border-radius: 30px;
+
+  
+}
+
+.brandNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(138, 76, 76);
+  font-size: 2em;
+}
+.navLinks {
+  /* border: 3px solid blue; */
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+.homeNav {
+  
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+
+.aboutNav {
+  text-decoration: none;
+  color:  rgb(0, 0, 0);
+  font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+.membershipNav {
+  text-decoration: none;
+  color:  rgb(0, 0, 0);
+  font-family: 'Oleo Script Swash Caps', cursive;
+}
+
