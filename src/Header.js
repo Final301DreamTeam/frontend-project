@@ -18,10 +18,10 @@ class Header extends React.Component {
             <>
                 <Navbar className="navBar" bg="dark" variant="dark">
                     <Container className="container">
-                        <Navbar.Brand className="brandNav" href="#home">FindMyMeal</Navbar.Brand>
+                        <Navbar.Brand className="brandNav" href="#home">GOODTIME</Navbar.Brand>
                         <Nav className="navLinks">
                             <Nav.Link className="homeNav" href="/">Home</Nav.Link>
-                            <Nav.Link className="savedNav" href="/Saved">Saved</Nav.Link>
+                            
                             <Nav.Link className="aboutNav" href="/About">About</Nav.Link>
                             <Nav.Link className="membershipNav" href="/Profile">Profile</Nav.Link>
                         </Nav>

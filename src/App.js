@@ -39,17 +39,25 @@ class App extends React.Component {
   }
 
   getRestaurants = async (city, food) => {
-    try {
-      let restaurants = await axios.get(
-        `${process.env.REACT_APP_SERVER}/restaurants?location=${city}&term=${food}`
-      );
+    if (this.props.auth0.isAuthenticated) {
+      // get a token
+      // JSON Web Token _ (pronounced JOT)
+      const res = await this.props.auth0.getIdTokenClaims();
+      const jwt = res.__raw; 
+      const config = {
+        method: 'get',
+        baseURL: process.env.REACT_APP_SERVER,
+        url: `/restaurants?location=${city}&term=${food}`,
+        headers: {'Authorization': `Bearer ${jwt}`}
+
+      }
+    
+      let restaurants = await axios (config);
       this.setState({
         restaurantsData: restaurants.data,
       });
-    } catch (error) {
-      console.log(`error message `, error);
     }
-  };
+  }
   postRestaurants = async (newRestaurant) => {
     try {
       let dataTosave = await axios.post(
@@ -111,7 +119,6 @@ class App extends React.Component {
       showModal: false
     })
   }
-  componentDidMount() { this.getRestaurants() }
 
   render() {
 
@@ -176,6 +183,3 @@ class App extends React.Component {
   }
 }
 export default withAuth0(App);
-
-
-

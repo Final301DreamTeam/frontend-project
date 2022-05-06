@@ -24,7 +24,7 @@ class Home extends React.Component {
             <Form.Control type="text" />
           </Form.Group>
           <Form.Group controlId="Food">
-            <Form.Label>What are you carving</Form.Label>
+            <Form.Label>What GoodTime are you looking for ?</Form.Label>
             <Form.Control type="text" />
           </Form.Group>
           <Button variant="primary" type="submit">

@@ -24,7 +24,7 @@ class Saved extends React.Component {
 
   render() {
     return (
-      <>
+      <main>
         {this.props.savedRestaurants.map((restaurant, idx) => (
           <Card className="cards" key={restaurant._id}>
             <Card.Body>
@@ -56,7 +56,7 @@ class Saved extends React.Component {
             </Card.Body>
           </Card>
         ))}
-      </>
+      </main>
     );
   }
 }

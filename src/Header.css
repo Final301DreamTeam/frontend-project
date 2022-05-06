@@ -31,7 +31,6 @@ body {
 }
 
 .brandNav {
-  font-family: 'Oleo Script Swash Caps', cursive;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,11 +52,6 @@ body {
   font-family: 'Oleo Script Swash Caps', cursive;
 }
 
-.savedNav {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-family: 'Oleo Script Swash Caps', cursive;
-}
 
 .aboutNav {
   text-decoration: none;

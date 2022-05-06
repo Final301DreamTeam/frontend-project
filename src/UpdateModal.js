@@ -44,7 +44,7 @@ class Update extends React.Component {
           <Form.Control type='text' placeholder={this.props.updateRes.notes}/>
         </Form.Group>
         
-        <Button onClick={this.handleSubmit} >Update Restaurant</Button>
+        <Button onClick={this.handleSubmit} >Update</Button>
       </Form>
 
     )

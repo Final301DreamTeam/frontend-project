@@ -1,5 +1,6 @@
 import React from "react";
 import { Carousel, Button } from "react-bootstrap";
+import './Results.css'
 
 
 class Results extends React.Component {
@@ -25,7 +26,7 @@ class Results extends React.Component {
 
         {this.props.restaurantsData.length ? (
           this.props.restaurantsData.map((data, idx) => (
-            <Carousel.Item key={idx}>
+            <Carousel.Item className="carsimg" key={idx}>
               <img
                 className="d-block w-100"
                 src={data.image_url}
@@ -50,7 +51,7 @@ class Results extends React.Component {
             </Carousel.Item>
           ))
         ) : (
-          <h4>Hello</h4>
+          <></>
         )}
       </Carousel>
     );
